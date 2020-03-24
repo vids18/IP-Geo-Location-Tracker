@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<style>
+h2 {
+  	border: 3px solid blue;
+   }
+
+div {
+  background-color: lightgrey;
+  width: 300px;
+  height: 950px;
+  border: 5px solid blue;
+  padding: 20px;
+  margin: 20px;
+  font-style: oblique;
+  font-family:Helvetica;
+}
+
+
+.new-search {
+    border: 1px solid #B5C9D4;
+    padding: 6px 15px;
+    background: #ECF1F4;
+    width: 235px;
+    font-size: 12px;
+    color: #3E7EA0;
+    height: 18px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2), 0px 1px 3px rgba(25, 62, 83, 0.1) inset, 0px 0px 0px 8px rgba(155, 180, 195, 0.3);
+}
+body {
+	background-image:url("/static/loc.jpg"); 
+	background-repeat: repeat-x; 
+	background-size: cover;
+	background-attachment: scroll; 
+  	background-size: 100% 100%;
+	background-color: lightblue;
+    }
+
+</style>
+
+	
+
+<h2 style="background-color:rgba(255, 99, 71, 0.5);"><center>GeoLocation Tracker</center></h2>
+
+
+
+<center> <div>
+<form action="http://127.0.0.1:5000/get_reg" method="POST">
+	<label for="ipaddress">Please enter your Location IP Address:</label>
+	<input type="text" name="ipaddress" required placeholder="ip address" class="new-search"><br>
+ 	<br>
+  	<input type="submit" value="Insert to DB">
+</form>
+<br>
+<form action="http://127.0.0.1:5000/lochist" method="POST">
+	<label for="number">Enter a number to retrieve the location IP:</label>
+	<input type="text" name="number" required placeholder="input a number" class="new-search">
+	<br>
+	<br>
+	<input type="submit" name="text_input" value="First N History">
+
+</form>
+<br>
+<form action="http://127.0.0.1:5000/date_time" method="POST">
+	<label for="from year">Enter the individual start and end limits for year, month, day, hours, minutes and seconds</label>
+	<input type="text" name="fromyear" required placeholder="Enter From year" class="new-search">
+	<br>
+	<br>
+	<input type="text" name="toyear" required placeholder="Enter To year" class="new-search">
+	<br>
+	<br>
+	<input type="text" name="frommonth" required placeholder="Enter from month" class="new-search">
+	<br>
+	<br>
+	<input type="text" name="tomonth" required placeholder="Enter to month" class="new-search">
+	<br>
+	<br>
+	<input type="text" name="fromday" required placeholder="Enter from day" class="new-search">
+	<br>
+	<br>
+	<input type="text" name="today" required placeholder="Enter to day" class="new-search">
+	<br>
+	<br>
+	<input type="text" name="fromhour" required placeholder="Enter from hour" class="new-search">
+	<br>
+	<br>
+	<input type="text" name="tohour" required placeholder="Enter to hour" class="new-search">
+	<br>
+	<br>
+	<input type="text" name="frommins" required placeholder="Enter from minutes" class="new-search">
+	<br>
+	<br>
+	<input type="text" name="tomins" required placeholder="Enter to minutes" class="new-search">
+	<br>
+	<br>
+	<input type="text" name="fromsecs" required placeholder="Enter from seconds" class="new-search">
+	<br>
+	<br>
+	<input type="text" name="tosecs" required placeholder="Enter to seconds" class="new-search">
+	<br>
+	<br>
+	<input type="submit" name="datetime" value="Date_Range History">
+
+</form>
+
+</div>
+</center>
+
+</body>
+</html>

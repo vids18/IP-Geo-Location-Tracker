@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<body style="background-image:url('/static/loc.jpg');  background-repeat: no-repeat; background-size: cover">
+<style>
+
+
+h2 {
+  	border: 3px solid blue;
+   }
+
+</style>
+<h2 style="background-color:rgba(255, 99, 71, 0.5);"><center>GeoLocation Tracker</center></h2>  
+submitted!!!!!
+<table border="1">
+	{% for row in document1 %}
+  <tr>
+    <td>{{ row['IP_Address'] }}</td>
+    <td>{{ row['City'] }}</td>
+    <td>{{ row['time'] }}</td>
+  </tr>
+
+	{% endfor %}
+</table>
+   </body>
+</html>
