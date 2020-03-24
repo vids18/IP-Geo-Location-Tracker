@@ -11,3 +11,6 @@ There are three types of files involved in this project.
 The python files(.py) are stored inside the path: C:/users/vidhi/Python.
 The static images(.jpg/.png) are stored inside the path: C:/users/vidhi/Python/Static.
 The HTML files(.html) are stored inside the path: C:/users/vidhi/Python/Templates
+
+# Initial File
+The first file for execution is the index.py file. The HTML files follows the flow according to the code.
